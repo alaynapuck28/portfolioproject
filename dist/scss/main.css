@@ -229,7 +229,7 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #ed61ed;
+  background: #f8bcf8;
   color: #333; }
 
 #main-footer {
@@ -238,6 +238,14 @@ main {
   background: #190319;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -270,11 +278,15 @@ main {
     grid-template-columns: 1fr;
     justify-content: center; }
     .about-info .job {
-      text-align: left; } }
+      text-align: left; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
 
 .wrapper {
   display: flex;
